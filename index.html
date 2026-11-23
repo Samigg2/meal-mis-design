@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" class="auth-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in — RAYEE II MEAL MIS</title>
+    <meta name="description" content="Sign in to the RAYEE II MEAL Management Information System" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Same fonts as meal-mis-frontend/index.html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+    <link rel="stylesheet" href="css/zoom.css" />
+    <!-- Theme first, then Tailwind v4 (same as the real app), then Lucide icons -->
+    <script src="js/tailwind-theme.js"></script>
+    <script src="vendor/tailwindcss-browser-4.1.11.js"></script>
+    <script src="vendor/lucide-0.575.0.min.js"></script>
+  </head>
+  <body class="bg-[#061933]">
+    <div id="app"></div>
+    <!-- The way back to the folder root, for links and images (js/routes.js) -->
+    <script>window.BASE = "";</script>
+    <!-- Plain scripts, in order: data → words → session → routes → components → page.
+         No modules, so the page also opens by double-clicking. -->
+    <script src="js/data.js"></script>
+    <script src="js/i18n/am.js"></script>
+    <script src="js/i18n/index.js"></script>
+    <script src="js/session.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/components/icon.js"></script>
+    <script src="js/components/language-menu.js"></script>
+    <script src="js/components/demo-accounts.js"></script>
+    <script src="js/pages/login.js"></script>
+  </body>
+</html>

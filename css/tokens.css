@@ -1,0 +1,77 @@
+/*
+ * RAYEE II MEAL MIS — colour tokens.
+ * Copied from meal-mis-frontend/src/styles.css (":root", light mode). Keep the
+ * two the same: change a colour there, change it here. Tailwind reads these
+ * through js/tailwind-theme.js (bg-brand, text-ink, border-line …).
+ */
+:root {
+  --radius: 0.5rem;
+
+  /* Backgrounds & surfaces */
+  --background: #f8f9ff;
+  --foreground: #475569;
+  --card: #ffffff;
+  --card-foreground: #475569;
+  --popover: #ffffff;
+  --popover-foreground: #475569;
+
+  --primary: #475569;
+  --primary-foreground: #ffffff;
+
+  --secondary: #f1efea;
+  --secondary-foreground: #1c1917;
+
+  --muted: #f1efea;
+  --muted-foreground: #64748b;
+
+  --accent: #f3f4f6;
+  --accent-foreground: #1e293b;
+
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --success: #16a34a;
+  --success-foreground: #ffffff;
+
+  --warning: #f59e0b;
+  --warning-foreground: #ffffff;
+
+  --border: #e7e3dc;
+  --input: #e7e3dc;
+  --ring: #475569;
+
+  /* Chart series */
+  --chart-1: #475569;
+  --chart-2: #d97706;
+  --chart-3: #6366f1;
+  --chart-4: #16a34a;
+  --chart-5: #e11d48;
+
+  /* Sidebar */
+  --sidebar: #0b192c;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #3b82f6;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: rgba(255, 255, 255, 0.05);
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #38bdf8;
+
+  /* App palette */
+  --ink: #475569;
+  --ink-soft: #64748b;
+  --ink-faint: #a8a29e;
+  --line: #f3f4f6;
+  --line-soft: #ebe7e0;
+  --surface-subtle: #faf9f7;
+  --surface-sunken: #efede8;
+  --brand: #3b82f6;
+  --brand-hover: #2563eb;
+  --brand-soft: #eff6ff;
+  --danger: #dc2626;
+
+  /* Sign-in banner */
+  --banner: #1e3a5f;
+  --banner-accent: #3b82f6;
+  --banner-muted: #9db8cf;
+}

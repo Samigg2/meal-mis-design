@@ -1,0 +1,19 @@
+/*
+ * App-page extras copied from meal-mis-frontend/src/styles.css.
+ */
+
+/* The sidebar's thin scroll bar (.sidebar-scroll in styles.css). */
+.sidebar-scroll { scrollbar-width: thin; scrollbar-color: rgb(255 255 255 / 0.12) transparent; scrollbar-gutter: stable; }
+.sidebar-scroll:hover { scrollbar-color: rgb(255 255 255 / 0.3) transparent; }
+.sidebar-scroll::-webkit-scrollbar { width: 6px; }
+.sidebar-scroll::-webkit-scrollbar-track { background: transparent; margin: 6px 0; }
+.sidebar-scroll::-webkit-scrollbar-thumb { background: rgb(255 255 255 / 0.12); border-radius: 9999px; }
+.sidebar-scroll:hover::-webkit-scrollbar-thumb { background: rgb(255 255 255 / 0.3); }
+
+/* Leaflet map sits under the sticky top bar. */
+.leaflet-pane, .leaflet-top, .leaflet-bottom { z-index: 5 !important; }
+
+@media print {
+  [data-sidebar], header, [data-drawer-backdrop] { display: none !important; }
+  html { zoom: 1 !important; }
+}

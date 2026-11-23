@@ -1,0 +1,16 @@
+/*
+ * DESIGN ONLY — every page is shown at 110% on computer screens (the user's
+ * choice, 2026-11-22: the real app looks best at browser zoom 110%). Phones
+ * stay at 100% so nothing runs off the screen. Change --page-zoom to resize
+ * everything; 1 = exactly the real app at normal zoom.
+ *
+ * CSS zoom also enlarges 100vh, so full-height parts are divided by the zoom
+ * to still fit the window exactly.
+ */
+@media (min-width: 64rem) {
+  html { --page-zoom: 1.1; zoom: var(--page-zoom); }
+  .min-h-screen { min-height: calc(100vh / var(--page-zoom)) !important; }
+  .h-screen, .lg\:h-screen { height: calc(100vh / var(--page-zoom)) !important; }
+  .max-h-screen { max-height: calc(100vh / var(--page-zoom)) !important; }
+  .top-screen-sticky { top: 0; }
+}
